@@ -17,12 +17,12 @@
     /* Body */
     body {
     font-family: 'Roboto', sans-serif;
-    color:var(--black);
+    color: $black;
     font-weight: 400;
     font-size: 14px;
     line-height:1.17;
     letter-spacing: 0.03em;
-    background:var(--white);
+    background: $white;
     }
     /* Ul reset */
     ul {

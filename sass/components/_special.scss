@@ -20,7 +20,7 @@
     .special__p {
     font-size: 14px;
     line-height: 1.71;
-    color:var(--grey80);
+    color: $grey80;
     margin: 0 auto;
     }
     /* special li */
@@ -29,7 +29,7 @@
     }
     /* special div */
     .special__div {
-    background-color: var(--whiteF5);
+    background-color: $whiteF5;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;

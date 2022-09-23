@@ -3,8 +3,8 @@
 
 /* Site nav header */
 .site-nav {
-    background:var(--white);
-    border-bottom: 1px solid var(--whiteECE);
+    background: $white;
+    border-bottom: 1px solid $whiteECE;
     }
     
     /* nav flex */
@@ -22,61 +22,62 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    color:var(--black);
+    color: $black;
     line-height: 1.2;
     }
     
-    /* link hover */
-    .site-nav__page:hover,
-    .site-nav__page:focus {
-    color:var(--blue);
-    }
     /* студія портфоліо контакти text */
     .site-nav__page {
     position: relative; 
     font-weight: 500;
-    color:var(--black);
+    color: $black;
     display: block;
     padding: 32px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
+      /* link hover */
+      &:hover,
+      &:focus {
+      color: $blue;
+      }}
     /* Current page */
     .site-nav__current {
-    color: var(--blue);
-    }
-    .site-nav__current::after {
+    color: $blue;
+    /* Current page :after */
+    &::after {
     content: '';
     position: absolute;
     bottom: -1px;
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--blue);
+    background: $blue;
     border-radius: 2px;
-    }
+    }}
     /* Site nav contacts */
     .site-nav__contacts {
-    color:var(--grey80);
+    color: $grey80;
     font-weight: 500;
-    fill: var(--grey75);
+    fill: $grey75;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
     /* Site nav contacts hover/focus */
-    .site-nav__contacts:hover,
-    .site-nav__contacts:focus {
-    fill: var(--blue);
-    color: var(--blue);
-    } 
+    &:hover,
+    &:focus {
+    fill: $blue;
+    color: $blue;
+    } }
+
     /* Site nav contacts icon margin */
-    .site-nav__contacts svg {
+    .site-nav__svg {
     margin-right: 10px;
-    }    
+    }   
+
     /* Site nav end */
     

@@ -1,27 +1,12 @@
 /* Root */
-
-:root {
-    --black:#212121;
-    --white:#FFFFFF;
-    --blue:#2196F3;
-    --grey80:#808080;
-    --grey-transparent:rgba(255, 255, 255, 0.6);
-    --grey75:#757575;
-    --whiteF5:#F5F4FA;
-    --dark-grey:#2F303A;
-    --whiteECE:#ECECEC;
-    --whiteEEE:#EEEEEE;
-    --light-grey:#AFB1B8;
-    --footer-icon:rgba(255, 255, 255, 0.1);
-    --boxes-hover:rgba(0, 0, 0, 0.3);
-    --overlay-bg:rgba(33, 150, 243, 0.9);
-    --backdrop-bg:rgba(0, 0, 0, 0.5);
-    --task-p-bg:rgba(47, 48, 58, 0.8);
-    --hat-button-close-border:rgba(0, 0, 0, 0.1);
-    --hat-button-hover:#188CE8;
-    --input-email:rgba(255, 255, 255, 0.6);
-    --input-border:rgba(33, 33, 33, 0.2);
-    --input-comment:rgba(117, 117, 117, 0.5);
-    --subscribe-border:rgba(255, 255, 255, 0.3);
-    }
-    /* Root end */
+$black:#212121;
+$white:#FFFFFF;
+$blue:#2196F3;
+$grey80:#808080;
+$grey75:#757575;
+$whiteF5:#F5F4FA;
+$dark-grey:#2F303A;
+$whiteECE:#ECECEC;
+$whiteEEE:#EEEEEE;
+$light-grey:#AFB1B8;
+$button-hover:#188CE8;

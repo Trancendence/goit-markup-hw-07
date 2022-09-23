@@ -18,7 +18,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white);
+    color: $white;
     margin-top: 0;
     margin-bottom: 30px;
     }
@@ -28,8 +28,8 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    background:var(--blue);
-    color: var(--white);
+    background: $blue;
+    color: $white;
     cursor: pointer;
     margin: 0 auto;
     display: block;
@@ -39,10 +39,10 @@
     transition-property: background;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .header-button-open:hover {
-    background: var(--hat-button-hover);
-    }
+    /* header button hover */
+    &:hover {
+    background: $button-hover;
+    }}
     /* is-hidden */
     .backdrop.is-hidden {
     opacity: 0;
@@ -56,7 +56,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:var(--backdrop-bg);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     visibility: visible;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -66,7 +66,7 @@
     /* Modal */
     
     .modal {
-    background: var(--white);
+    background: $white;
     border-radius: 4px;
     position: absolute;
     width: 528px;
@@ -94,12 +94,12 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--grey75);
+    color: $grey75;
     }
     /* Modal Input  */
     .modal-form__input {
     height: 40px;
-    border: 1px solid var(--input-border);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 0;
     width: 100%;
@@ -108,10 +108,21 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    /* Input focus */
+    &:focus,
+    &:hover {
+    border: 1px solid $blue;
+    outline: none;
     }
+   /* Modal svg hover */
+   &:focus-within + .modal-form__svg,
+   &:hover + .modal-form__svg {
+   fill: $blue;
+   }}
+
     /* Input comment */
     .modal-form__comment {
-    border: 1px solid var(--input-border);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px; 
     resize: none;
@@ -119,22 +130,20 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    /* Input focus */
-    .modal-form__input:focus,
-    .modal-form__comment:focus,
-    .modal-form__input:hover,
-    .modal-form__comment:hover {
-    border: 1px solid var(--blue);
+    /* comment hover/focus */
+    &:focus,
+    &:hover {
+    border: 1px solid $blue;
     outline: none;
-    }
-    /* modal-form-comment::placeholder */
-    .modal-form__comment::placeholder {
+    }    
+    /* comment placeholder */
+    &::placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--input-comment);
-    }
+    color: rgba(117, 117, 117, 0.5);
+    }}
+
     /* Modal svg */
     .modal-form__svg {
     position: absolute;
@@ -144,11 +153,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    /* Modal svg hover */
-    .modal-form__input:focus-within + .modal-form__svg,
-    .modal-form__input:hover + .modal-form__svg {
-    fill: var(--blue);
-    }
+ 
     /* hat-button-close */
     .header-button-close {
     position: absolute;
@@ -159,20 +164,21 @@
     top:8px;
     right:8px;
     display: block;
-    border: 1px solid var(--hat-button-close-border);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100%;
-    background-color: var(--white);
+    background-color: $white;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .header-button-close:hover {
+    /* hover */
+    &:hover {
     fill: var(--blue);
-    }
+    }}
+
     /* Submit */
     .modal-submit {
     line-height: 1.71;
-    color: var(--grey75);
+    color: $grey75;
     margin: 0;
     margin-top: 20px;
     position: relative;
@@ -186,7 +192,12 @@
     height: 15px;
     position: absolute;
     margin-left: 19px;
-    }
+    /* Agree svg hover + focus */
+    &:checked ~ .modal-submit__svg {
+    border-color: $blue;
+    background-color: $blue;
+    }}
+
     /* Agree check */
     .modal-submit__span {
     margin-left: 14px;
@@ -194,22 +205,18 @@
     width: 16px;
     height: 15px;
     }
+
     /* Agree svg */
     .modal-submit__svg {
-    border: 2px solid var(--black);
+    border: 2px solid $black;
     border-radius: 4px;
-    fill: var(--white);
+    fill: $white;
     }
-    /* Agree svg hover + focus */
-    .modal-submit__input:checked ~ .modal-submit__svg {
-    border-color: var(--blue);
-    background-color: var(--blue);
-    }
-    
+ 
     /* Agreement */
     .modal-submit__license {
     text-decoration: underline;
-    color: var(--blue);
+    color: $blue;
     margin-left: 8px;
     }
     
@@ -225,8 +232,8 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--white);
-    background: var(--blue);
+    color: $white;
+    background: $blue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
@@ -234,12 +241,12 @@
     transition-property: background;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
     /* Modal Button hover */
-    .modal-submit__submit:hover,
-    .modal-submit__submit:focus {
-    background: var(--hat-button-hover);
-    }
+    &:hover,
+    &:focus {
+    background: $button-hover;
+    }}
+
     /* Modal end */
     
     /* Шапка (hat) end */

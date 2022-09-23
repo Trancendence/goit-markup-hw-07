@@ -3,7 +3,7 @@
 
 /* command bg */
 .command {
-background-color: var(--whiteF5);
+background-color: $whiteF5;
 }  
 
     .command__title {
@@ -17,7 +17,7 @@ background-color: var(--whiteF5);
 
     /* Box li */
     .command__li {
-    background-color: var(--white);
+    background-color: $white;
     }
 
     /* ul */
@@ -37,7 +37,7 @@ background-color: var(--whiteF5);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    color:var(--black);
+    color: $black;
     margin: 0;
     margin-bottom: 10px;
     }
@@ -46,7 +46,7 @@ background-color: var(--whiteF5);
     .command__p {
     font-size: 16px;
     line-height: 1.18;
-    color:var(--grey75);
+    color: $grey75;
     margin: 0;
     margin-bottom: 10px;
     }
@@ -56,17 +56,16 @@ background-color: var(--whiteF5);
     width: 44px;
     height: 44px;
     border-radius:50%;
-    background-color: var(--white);
-    fill: var(--light-grey);
+    background-color: $white;
+    fill: $light-grey;
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     /* a hover */
     &.command__a:hover,
     &.command__a:focus {
-    background-color: var(--blue);
-    fill: var(--white);
+    background-color: $blue;
+    fill: $white;
     }}
 
    /* command-icons__li */
@@ -74,7 +73,7 @@ background-color: var(--whiteF5);
     display: inline-flex;
     flex-direction: row;
     margin-right: 10px;
-
+    /* last of type */
     &:last-of-type {
     margin-right: 0px;
     }}
