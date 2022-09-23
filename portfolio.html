@@ -12,39 +12,44 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
     </head>
     <body>
-      <header>
-        <!-- Header -->    
-            <div class="container">
-        <!-- Navigation -->
-        <nav>
-          <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
-          <ul>
-            <li><a href="./index.html" class="page">Студія</a></li>
-            <li><a href="./portfolio.html" class="page current">Портфоліо</a></li>
-            <li><a href="#" class="page">Контакти</a></li>
-          </ul>
-        </nav>
-          <ul class="contacts">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-contacts">
-                <svg width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a>
+      <header class="site-nav">
+        <!-- Site nav -->
+          <div class="container site-nav__div">
+      <nav class="site-nav__nav">
+        <a href="./index.html" class="site-nav__logo"><span class="web">Web</span>Studio</a>
+        <ul class="site-nav__ul">
+          <li>
+            <a href="./index.html" class="site-nav__page">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="site-nav__current site-nav__page">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="site-nav__page">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+       <!-- Contacts -->
+        <ul class="site-nav__ul">
+          <li>
+            <a href="mailto:info@devstudio.com" class="site-nav__contacts">
+              <svg width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="site-nav__contacts">
+              <svg width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+            </svg>+38 096 111 11 11</a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="header-contacts">
-                <svg width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-              </svg>+38 096 111 11 11</a>
-              </li>
-          </ul>
-      </div>
-          </header>
+        </ul>
+    </div>
+        </header>
       <!-- Main -->
     <main>
       <section class="section">
@@ -229,21 +234,21 @@
     <!-- Posters end -->
 </main>
     <!--Bottom-->
-    <footer>
-      <section class="container">
+    <footer class="footer">
+      <div class="container">
       <div>
   <!--Logo-->
-  <a href="./index.html" class="logo"><span class="web">Web</span><span class="stud1">Studio</span></a>
+  <a href="./index.html" class="footer__logo"><span class="web">Web</span>Studio</a>
   <!--Address-->
-  <address class="footer-address">
+  <address class="footer__address">
   <ul>
-    <li class="footer-address-li">
+    <li class="footer__address--li">
       <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="link addpos1">м. Київ, пр-т Лесі Українки, 26</a>
     </li>
-    <li class="footer-address-li">
+    <li class="footer__address-li">
       <a href="mailto:info@devstudio.com" class="link addpos2">info@devstudio.com</a>
     </li>
-    <li class="footer-address-li">
+    <li class="footer__address--li">
       <a href="tel:+380961111111" class="link addpos2">+38 096 111 11 11</a>
     </li>
   </ul>
@@ -251,31 +256,31 @@
   </div>
   <!--Приєднуйтесь (connect)-->
   <div>
-    <h2 class="connect-h2">Приєднуйтесь</h2>
-    <ul class="list-icons">
-      <li>
-    <a href="#instagram" class="connect-a">
+    <h2 class="connect__h2">Приєднуйтесь</h2>
+    <ul class="connect-icons">
+      <li class="connect-icons__li">
+    <a href="#instagram" class="connect__a">
       <svg width="44px" height="44px">
         <use href="./images/icons.svg#instagram"></use>
       </svg>
     </a>
   </li>
-  <li>
-    <a href="#twitter" class="connect-a">
+  <li class="connect-icons__li">
+    <a href="#twitter" class="connect__a">
       <svg width="44px" height="44px">
         <use href="./images/icons.svg#twitter"></use>
       </svg>
     </a>
     </li>
-    <li>
-    <a href="#facebook" class="connect-a">
+    <li class="connect-icons__li">
+    <a href="#facebook" class="connect__a">
       <svg width="44px" height="44px">
         <use href="./images/icons.svg#facebook"></use>
       </svg>
     </a>
   </li>
-  <li>
-    <a href="#linkedin" class="connect-a">
+  <li class="connect-icons__li">
+    <a href="#linkedin" class="connect__a">
       <svg width="44px" height="44px">
         <use href="./images/icons.svg#linkedin"></use>
       </svg>
@@ -286,17 +291,17 @@
   <!--Subscribe-->
   <div class="subscribe">
     <form name="subscribe">
-      <label for="email"><h2 class="connect-h2">Підпишіться на розсилку</h2></label>
-      <input type="email" name="email" class="subscribe-email" placeholder="E-mail" />
-      <button type="submit" class="subscribe-button">Підписатися
-        <svg width="24px" height="24px" class="subscribe-svg">
+      <label for="email" class="connect__p">Підпишіться на розсилку</label>
+      <input type="email" name="email" id="email" class="subscribe__email" placeholder="E-mail" />
+      <button type="submit" class="subscribe__button">Підписатися
+        <svg width="24px" height="24px" class="subscribe__svg">
           <use href="./images/icons.svg#send"></use>
         </svg>
       </button>
     </form>
   </div>
+  <!--Subscribe end-->
   </div>
-  </section>
   </footer>
 </body>
 </html>

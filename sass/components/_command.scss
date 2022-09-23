@@ -1,0 +1,76 @@
+/* Наша команда (Command) */
+
+
+/* command bg */
+.command {
+    background-color: var(--whiteF5);
+    }  
+    .command__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top:0;
+    margin-bottom:50px;
+    }
+    /* Box li */
+    .command__li {
+    background-color: var(--white);
+    }
+    /* ul */
+    .command__ul {
+    display: flex;
+    justify-content:space-between;
+    }
+    /* text div */
+    .command__div {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+    /* member h3 */
+    .command__h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color:var(--black);
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    /* member position p */
+    .command__p {
+    font-size: 16px;
+    line-height: 1.18;
+    color:var(--grey75);
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    /* a */
+    .command__a {
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    background-color: var(--white);
+    fill: var(--light-grey);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* a hover */
+    &.command__a:hover,
+    &.command__a:focus {
+    background-color: var(--blue);
+    fill: var(--white);
+    }}
+
+   /* command-icons__li */
+    .command-icons__li {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10px;
+
+    &:last-of-type {
+    margin-right: 0px;
+    }}
+    
+    /* Наша команда (Command) end */
