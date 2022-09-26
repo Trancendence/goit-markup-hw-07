@@ -70,6 +70,12 @@
     margin-bottom: 9px;
     }}
 
+  /* Address hover/focus */
+  .footer__address .link:hover,
+  .footer__address .link:focus {
+  color: $blue;
+  }
+
     /* address */
     .addpos1 {
     line-height: 1.71;
@@ -84,11 +90,7 @@
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     font-style: normal;
-    /* Address hover/focus */
-    &:hover,
-    &:focus {
-    color: $blue;
-    }}
+    }
 
     /* Web white */
     .web {
