@@ -29,10 +29,9 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
     /* a:hover */
-    &.connect__a:hover, 
-    &.connect__a:focus {
+    &:hover, 
+    &:focus {
     background-color: $blue;
     }}
      
@@ -70,11 +69,16 @@
     margin-bottom: 9px;
     }}
 
+  /* Address  */
+  .footer__address--a {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* Address hover/focus */
-  .footer__address .link:hover,
-  .footer__address .link:focus {
+  &:hover,
+  &:focus {
   color: $blue;
-  }
+  }}
 
     /* address */
     .addpos1 {

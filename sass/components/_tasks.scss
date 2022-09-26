@@ -2,9 +2,10 @@
 
 
 /* tasks */
-.tasks {
+    .tasks {
     padding-top: 0;
     }
+
     /* title */
     .tasks__title {
     font-weight: 700;
@@ -14,6 +15,7 @@
     margin-top:0;
     margin-bottom:50px;
     }
+
     /* tasks ul */
     .tasks__ul {
     display:flex;
@@ -21,6 +23,8 @@
     justify-content:space-between;
     margin: 0;
     }
+
+    /* tasks p */
     .tasks__p {
     font-weight: 700;
     line-height: 1.14;
@@ -33,12 +37,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 70px;
     bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-
     }
+
+    /* tasks li */
     .tasks__li {
     position: relative;
     }
+
     /* Tasks end */
